@@ -11,8 +11,10 @@ export function Reservation() {
     </div>
     <div class="home2"><p>
     <form>
-<label for="date">Wybierz datę:</label>
+<label for="date">Wybierz datę przyjazdu</label>
 <input type="date" class = "formReservation" id="date" name="date"><br><br>
+<label for="date2">Wybierz datę wyjazdu</label>
+<input type="date" class = "formReservation" id="date2" name="date2"><br><br>
 <label for="room">Wybierz pokój/lub zabieg:</label>
 <select id="room" name="room" class = "formReservation">
 </select><br><br>
@@ -37,7 +39,48 @@ export function Reservation() {
       const cancelButton = message.querySelector("#cancelButton1");
       cancelButton.addEventListener("click", () => {
         message.remove();
+        date2Input.value = "";
+        dateInput.value = "";
       });
+    }
+  });
+
+  const date2Input = section.querySelector("#date2");
+  date2Input.disabled = true;
+
+  dateInput.addEventListener("change", () => {
+    const startDate = new Date(dateInput.value);
+    date2Input.disabled = false;
+    date2Input.min = startDate.toISOString().split("T")[0];
+  });
+
+  date2Input.addEventListener("change", () => {
+    const selectedDate = new Date(date2Input.value);
+    const startDate = new Date(dateInput.value);
+    const oneYearAfter = new Date(
+      startDate.getFullYear() + 1,
+      startDate.getMonth(),
+      startDate.getDate()
+    );
+
+    if (
+      dateInput.value &&
+      selectedDate.getTime() - startDate.getTime() > 31536000000
+    ) {
+      const message2 = document.createElement("div");
+      message2.id = "message2";
+      message2.innerHTML = `⚠️</br>Wybrana data wyjazdu nie może być dalsza niż rok od daty przyjazdu!</br><button id="cancelButton2">Powrót</button>`;
+      const cancelButton2 = message2.querySelector("#cancelButton2");
+      message2.appendChild(cancelButton2);
+      section.appendChild(message2);
+      cancelButton2.addEventListener("click", () => {
+        message2.remove();
+        date2Input.value = "";
+        dateInput.value = "";
+      });
+    } else {
+      const message2 = document.querySelector("#message2");
+      if (message2) message2.remove();
     }
   });
 
