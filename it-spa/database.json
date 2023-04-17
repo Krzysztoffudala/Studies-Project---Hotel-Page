@@ -1,0 +1,96 @@
+{
+  "users": [],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Pokój unarny",
+      "beds": 1,
+      "guests": 1,
+      "price": 170,
+      "description": "Phasellus sollicitudin leo ac metus bibendum, tincidunt varius purus ullamcorper. Sed ac commodo nisi, vitae laoreet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla vitae congue nunc. Mauris sit amet enim non sapien fringilla viverra id id urna. Quisque sagittis a ante eu fringilla. Integer id purus scelerisque, malesuada lorem ac, accumsan lacus. Praesent a venenatis libero."
+    },
+    {
+      "id": 2,
+      "name": "Pokój binarny",
+      "beds": 1,
+      "guests": 2,
+      "price": 240,
+      "description": "Phasellus sollicitudin leo ac metus bibendum, tincidunt varius purus ullamcorper. Sed ac commodo nisi, vitae laoreet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla vitae congue nunc. Mauris sit amet enim non sapien fringilla viverra id id urna. Quisque sagittis a ante eu fringilla. Integer id purus scelerisque, malesuada lorem ac, accumsan lacus. Praesent a venenatis libero."
+    },
+    {
+      "id": 3,
+      "name": "Pokój trójkowy",
+      "beds": 2,
+      "guests": 3,
+      "price": 290,
+      "description": "Phasellus sollicitudin leo ac metus bibendum, tincidunt varius purus ullamcorper. Sed ac commodo nisi, vitae laoreet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla vitae congue nunc. Mauris sit amet enim non sapien fringilla viverra id id urna. Quisque sagittis a ante eu fringilla. Integer id purus scelerisque, malesuada lorem ac, accumsan lacus. Praesent a venenatis libero."
+    },
+    {
+      "id": 4,
+      "name": "Pokój czwórkowy",
+      "beds": 2,
+      "guests": 4,
+      "price": 340,
+      "description": "Phasellus sollicitudin leo ac metus bibendum, tincidunt varius purus ullamcorper. Sed ac commodo nisi, vitae laoreet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla vitae congue nunc. Mauris sit amet enim non sapien fringilla viverra id id urna. Quisque sagittis a ante eu fringilla. Integer id purus scelerisque, malesuada lorem ac, accumsan lacus. Praesent a venenatis libero."
+    }
+  ],
+  "treatments": [
+    {
+      "id": 1,
+      "name": "Masaż rozgrzanym monitorem",
+      "area": "plecy",
+      "time": 30,
+      "price": 80,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tincidunt tortor, et congue felis. Aliquam facilisis gravida scelerisque. Proin rhoncus dictum diam ut suscipit. Suspendisse potenti. Sed consequat consectetur nibh non condimentum. Vivamus ac odio dictum, mollis quam et, malesuada lacus."
+    },
+    {
+      "id": 2,
+      "name": "Biczowanie kablem od myszy",
+      "area": "plecy",
+      "time": 20,
+      "price": 70,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tincidunt tortor, et congue felis. Aliquam facilisis gravida scelerisque. Proin rhoncus dictum diam ut suscipit. Suspendisse potenti. Sed consequat consectetur nibh non condimentum. Vivamus ac odio dictum, mollis quam et, malesuada lacus."
+    },
+    {
+      "id": 3,
+      "name": "Peeling odłamkami płyty CD",
+      "area": "twarz",
+      "time": 15,
+      "price": 50,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tincidunt tortor, et congue felis. Aliquam facilisis gravida scelerisque. Proin rhoncus dictum diam ut suscipit. Suspendisse potenti. Sed consequat consectetur nibh non condimentum. Vivamus ac odio dictum, mollis quam et, malesuada lacus."
+    },
+    {
+      "id": 4,
+      "name": "Pedicure woskiem z USB",
+      "area": "nogi",
+      "time": 25,
+      "price": 100,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tincidunt tortor, et congue felis. Aliquam facilisis gravida scelerisque. Proin rhoncus dictum diam ut suscipit. Suspendisse potenti. Sed consequat consectetur nibh non condimentum. Vivamus ac odio dictum, mollis quam et, malesuada lacus."
+    },
+    {
+      "id": 5,
+      "name": "Manicure analogowo-cyfrowy",
+      "area": "ręce",
+      "time": 45,
+      "price": 150,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tincidunt tortor, et congue felis. Aliquam facilisis gravida scelerisque. Proin rhoncus dictum diam ut suscipit. Suspendisse potenti. Sed consequat consectetur nibh non condimentum. Vivamus ac odio dictum, mollis quam et, malesuada lacus."
+    },
+    {
+      "id": 6,
+      "name": "Kąpiel w gorącej kawie",
+      "area": "ciało",
+      "time": 60,
+      "price": 200,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tincidunt tortor, et congue felis. Aliquam facilisis gravida scelerisque. Proin rhoncus dictum diam ut suscipit. Suspendisse potenti. Sed consequat consectetur nibh non condimentum. Vivamus ac odio dictum, mollis quam et, malesuada lacus."
+    },
+    {
+      "id": 7,
+      "name": "Depilacja dyskiem twardym",
+      "area": "ciało",
+      "time": 45,
+      "price": 120,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tincidunt tortor, et congue felis. Aliquam facilisis gravida scelerisque. Proin rhoncus dictum diam ut suscipit. Suspendisse potenti. Sed consequat consectetur nibh non condimentum. Vivamus ac odio dictum, mollis quam et, malesuada lacus."
+    }
+  ]
+}
+ 
