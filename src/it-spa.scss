@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+// Nie dzialaly fonty, wiec skopiowalem do index.html i w taki sposob dziala...
+// @import url('https://fonts.googleapis.com/css?family=Babylonica');
+// @import url('https://fonts.googleapis.com/css?family=Annie Use Your Telescope');
+// @import url('https://fonts.googleapis.com/css?family=Source Code Pro');
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+}
+
+body {
+  background-color: white;
+  font-family: "Source Code Pro";
+  padding: 2rem;
+}
+
+nav {
+  box-shadow: #342f62 0 2px 8px 2px;
+  position: fixed;
+  padding: 10px;
+  width: calc(100% - 64px);
+  top: 0;
+  // margin-top: 20px;
+  background: white;
+  transition-duration: 5s;
+  display: flex;
+  button {
+    width: 20%;
+  }
+  .btn {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none !important;
+    font-size: 2rem;
+    outline: none;
+    color: inherit;
+    text-decoration: underline 0.1em rgba(52, 47, 98, 0);
+    transition: text-decoration-color 1000ms;
+    text-underline-offset: 0.5em;
+
+    &:active,
+    &:focus {
+      font-weight: bold;
+    }
+    &:hover {
+      color: #342f62;
+      text-decoration: underline 0.1em rgba(52, 47, 98, 1);
+      text-underline-offset: 0.5em;
+    }
+  }
+
+  .btn.btn-active {
+    background-color: #000000;
+    text-decoration: underline;
+  }
+}
+
+nav:hover {
+  background-color: #8a85b1;
+  transition-duration: 5s;
+  transform: scale(1.02);
+}
+
+main {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 2rem 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    li {
+      background-color: white;
+      box-shadow: #342f62 0 2px 8px 2px;
+      color: #000000;
+      padding: 0.5rem;
+
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        & > * + * {
+          margin-left: 1rem;
+        }
+      }
+
+      button,
+      .btn {
+        color: #000000;
+        box-shadow: #342f62 0 2px 8px 2px;
+      }
+
+      button,
+      .btn:hover {
+        box-shadow: #342f62 0 0px 8px 2px;
+      }
+    }
+
+    li + li {
+      margin-top: 2rem;
+    }
+  }
+
+  .btn {
+    color: #000000;
+    box-shadow: #342f62 0 2px 8px 2px;
+    margin-right: 20px;
+  }
+
+  article {
+    box-shadow: #342f62 0 2px 8px 2px;
+    margin: 2em 1em;
+    padding: 1rem;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      box-shadow: #342f62 0 2px 8px 2px;
+      color: black;
+      margin: 0;
+      padding: 1rem 0.5rem;
+    }
+  }
+}
+
+article:hover {
+  transition-duration: 5s;
+  background-color: #8a85b1;
+}
+section.home {
+  display: flex;
+  margin-bottom: 20px;
+
+  .home1 {
+    color: rgb(0, 0, 0);
+    width: 50%;
+    display: block;
+    box-shadow: #342f62 0 2px 8px 2px;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-right: 10px;
+    transition-duration: 5s;
+
+    h2 {
+      text-align: center;
+      box-shadow: #342f62 0 2px 8px 2px;
+      padding: 10px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 140px;
+      margin-right: 140px;
+    }
+    h2:hover {
+      box-shadow: #342f62 0 0px 8px 2px;
+    }
+  }
+  .home2 {
+    color: rgb(0, 0, 0);
+    display: block;
+    width: 50%;
+    box-shadow: #342f62 0 2px 8px 2px;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition-duration: 5s;
+  }
+}
+
+.home2:hover,
+.home1:hover {
+  background-color: #8a85b1;
+}
+
+.rooms {
+  text-align: center;
+  box-shadow: #342f62 0 2px 8px 2px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.rooms:hover {
+  text-align: center;
+  box-shadow: #342f62 0 2px 8px 2px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 140px;
+  margin-right: 140px;
+  transition-duration: 5s;
+  background-color: #8a85b1;
+}
+
+.itemLi:hover {
+  transition-duration: 5s;
+  background-color: #8a85b1;
+}
+
+.text-muted {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #342f62;
+}
+
+.payments {
+  max-width: 100%;
+}
+
+.banner {
+  width: auto;
+  height: 290px;
+  box-shadow: #342f62 0 2px 8px 2px;
+  background-image: url("../src/assets/ITbanner1.jpg");
+  transition-duration: 0.5s;
+  background-size: cover;
+  transition-timing-function: linear;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner:hover {
+  background-image: url("../src/assets/ITbanner1v3.jpg");
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  box-shadow: #342f62 0 2px 8px 2px;
+}
+// RESPONSIVE NAV
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+//test
+
+.testtt {
+  box-shadow: #342f62 0 2px 8px 2px;
+  transform: scale(1.02);
+}
+
+.cartJs {
+  text-align: center;
+  font-size: 15px;
+  // box-shadow: #342f62 0 2px 8px 2px;
+  border-left: #342f62 solid 3px;
+  padding-left: 10px;
+}
+.cartJs:hover {
+  text-align: center;
+  font-size: 15px;
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+.testt {
+  background-color: green;
+}
+
+.cartIcon {
+  font-size: 50px;
+}
+
+#resetButton {
+  font-size: 20px;
+  width: 75%;
+  height: 50%;
+  // box-shadow: #342f62 0 2px 8px 2px;
+  border: none;
+  background-color: transparent;
+  transition: all 0.35s;
+}
+
+#resetButton:hover {
+  font-size: 20px;
+  width: 75%;
+  height: 50%;
+  transform: scale(1.5);
+  border: none;
+}
+
+#resetButtonDiv {
+  margin: auto 0;
+}
+
+#confirmationWindow,
+#message,
+#emptyCartWindow,
+#message1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: #342f62 0 2px 8px 2px;
+}
+
+#confirmButton,
+#cancelButton,
+#confirmButtonPayment,
+#cancelButtonPayment,
+#returnToShoppingButton,
+#cancelButton1 {
+  box-shadow: #342f62 0 2px 8px 2px;
+  border: none;
+}
+
+#confirmButton:hover,
+#cancelButtonPayment:hover {
+  background-color: #b18596;
+}
+#cancelButton:hover,
+#confirmButtonPayment:hover,
+#returnToShoppingButton:hover {
+  background-color: #85b1a0;
+}
+
+#cartSection {
+  box-shadow: #342f62 0 2px 8px 2px;
+  padding: 20px;
+}
+#cartSection {
+  box-shadow: #342f62 0 2px 8px 2px;
+  padding: 20px;
+}
+
+#symbols {
+  font-size: 40px;
+  text-align: center;
+}
+#moveToPaymentBtn {
+  font-size: 20px;
+  box-shadow: #342f62 0 2px 8px 2px;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+#goBack {
+  font-size: 20px;
+  box-shadow: #342f62 0 2px 8px 2px;
+  border: none;
+  background-color: transparent;
+  margin: 30px;
+}
+#moveToPaymentBtn:hover,
+#goBack:hover,
+#cancelButton1:hover {
+  box-shadow: #342f62 0 0px 8px 2px;
+  transition-duration: 5s;
+  background-color: #8a85b1;
+}
+
+.formReservation {
+  box-shadow: #342f62 0 2px 8px 2px;
+}
+.formReservation:hover {
+  box-shadow: #342f62 0 0px 8px 2px;
+}
